@@ -11,6 +11,30 @@
           "method": "get",
           "src": "/api"
         }
+      },
+      {
+        "/getNotes": {
+          "method": "get",
+          "src": "/src/http/getNotes"
+        }
+      },
+      {
+        "/createNote": {
+          "method": "post",
+          "src": "/src/http/createNote"
+        }
+      },
+      {
+        "/deleteNote": {
+          "method": "delete",
+          "src": "/src/http/deleteNote"
+        }
+      },
+      {
+        "/updateNote": {
+          "method": "put",
+          "src": "/src/http/updateNote"
+        }
       }
     ],
     "static": {
@@ -19,6 +43,7 @@
     }
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "^4.0.3"
