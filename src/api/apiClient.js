@@ -2,7 +2,8 @@ import axios from 'axios';
 const BASE_URL = ""
 export const getNotes = (callback) => {
   axios.get(BASE_URL + '/getNotes')
-    .then(({data}) => {
+    .then((given) => {
+      console.log("data", given.data, "body: ", given )
       return data.body;
     })
     .then(({notes}) => callback(notes));
