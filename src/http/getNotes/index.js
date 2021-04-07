@@ -21,7 +21,7 @@ exports.handler = async function http (request) {
       try {
         body = JSON.parse(data.body)
       } catch (error) {
-        body = data.body
+        body = data
       }
       return { ...body, id: ref.id }
     });
